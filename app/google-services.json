@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "331227621165",
+    "project_id": "medical-record-ed74a",
+    "storage_bucket": "medical-record-ed74a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331227621165:android:5f6067af46236487a495a4",
+        "android_client_info": {
+          "package_name": "com.example.medicalrecord"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsqN1U6E6AHKnhldwGlvJm2Qu4Cx8d-ZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
