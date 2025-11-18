@@ -63,22 +63,17 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
-                // No necesitamos implementar el movimiento (drag and drop), así que retornamos false
                 return false;
             }
 
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
-                // Esta función se llama cuando un elemento es deslizado (swipe)
-                // Obtenemos la posición del elemento deslizado
                 int position = viewHolder.getAdapterPosition();
-                // Le pedimos al ViewModel que borre el registro en esa posición
                 medicalRecordViewModel.delete(adapter.getRecordAt(position));
 
-                // Opcional: Mostrar un mensaje de confirmación o "deshacer"
                 Toast.makeText(MainActivity.this, "Registro médico eliminado", Toast.LENGTH_SHORT).show();
             }
-        }).attachToRecyclerView(recyclerView); // ¡No olvides adjuntarlo a tu RecyclerView!
+        }).attachToRecyclerView(recyclerView);
 
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override

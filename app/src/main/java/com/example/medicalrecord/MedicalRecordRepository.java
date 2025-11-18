@@ -21,6 +21,9 @@ public class MedicalRecordRepository {
     public void insert(MedicalRecord medicalRecord) {
         executorService.execute(() -> medicalRecordDao.insert(medicalRecord));
     }
+    public void update(MedicalRecord medicalRecord) {
+        executorService.execute(() -> medicalRecordDao.update(medicalRecord));
+    }
     public void delete(MedicalRecord medicalRecord) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.execute(() -> {

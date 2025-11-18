@@ -64,6 +64,7 @@ public class MedicalRecordAdapter extends RecyclerView.Adapter<MedicalRecordAdap
                         intent.putExtra(RecordDetailActivity.EXTRA_NAME, clickedRecord.getName());
                         intent.putExtra(RecordDetailActivity.EXTRA_AGE, clickedRecord.getAge());
                         intent.putExtra(RecordDetailActivity.EXTRA_CONDITION, clickedRecord.getCondition());
+                        intent.putExtra(RecordDetailActivity.EXTRA_ID, clickedRecord.getId());
 
                         context.startActivity(intent);
                     }
